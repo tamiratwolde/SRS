@@ -11,6 +11,10 @@ public class App
         System.out.println( "sms" );
         
         System.out.println( "This is the main clss Method" );
+        for(int i=1;i<5;i++)
+        {
+        	System.out.print(i);
+        }
         
     }
 }
