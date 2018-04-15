@@ -23,4 +23,17 @@ public class StudentDao {
 	 	return null;
 	 		
 	}
+	
+	public Student getStudentByName(String Name) {
+	 	for(int i=0;i<studentsDatabase.size();i++) {
+	 		Student s= studentsDatabase.get(i);
+	 		if(s.getFirstName().equals(Name)) {
+	 			return s;
+	 			
+	 		}
+	 		
+	 	}
+	 	return null;
+	 		
+	}
 }

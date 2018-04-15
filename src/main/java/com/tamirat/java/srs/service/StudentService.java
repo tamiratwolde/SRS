@@ -15,4 +15,8 @@ public Student getStudentById(String id) {
 	return s;
 	
 }
+public Student getStudentByName(String Name) {
+   Student s= dao.getStudentByName(Name);	 
+   return s;
+}
 }
