@@ -8,8 +8,7 @@ import com.tamirat.java.srs.model.Student;
 public class StudentDao {
  private static List<Student> studentsDatabase=new ArrayList<Student>();
 	public void addStudent(Student s) {
-		studentsDatabase.add(s);
-		
+		studentsDatabase.add(s);	
 	}
 	public Student getStudentById(String id) {
 	 	for(int i=0;i<studentsDatabase.size();i++) {

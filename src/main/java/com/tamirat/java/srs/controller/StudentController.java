@@ -14,6 +14,7 @@ private  StudentService service= new StudentService();
 	 
 	 service.addStudent(stud);;
  }
+ 
  public Student getStudentById(String id) {
 	 return service.getStudentById(id);
  }
