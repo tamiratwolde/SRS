@@ -10,6 +10,17 @@ public class StudentDao {
 	public void addStudent(Student s) {
 		studentsDatabase.add(s);	
 	}
+	
+	public void deleteStudent(String id) {
+		
+		for(int i=0;i<studentsDatabase.size();i++) {
+	 		Student s= studentsDatabase.get(i);
+	 		if(s.getStudentId().equals(id)) {
+	 			studentsDatabase.remove(i);
+	 		}	
+	 		}
+		
+	}
 	public Student getStudentById(String id) {
 	 	for(int i=0;i<studentsDatabase.size();i++) {
 	 		Student s= studentsDatabase.get(i);
